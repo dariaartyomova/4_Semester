@@ -52,8 +52,8 @@ $c = $a % $b;
 $d = $a / $b;
 echo "$c\n";
 
-if ($a % $b == 0) echo "Делится: $d\n";
-else echo "Делится с остатком: $c\n";
+if ($a % $b == 0) echo "Г„ГҐГ«ГЁГІГ±Гї: $d\n";
+else echo "Г„ГҐГ«ГЁГІГ±Гї Г± Г®Г±ГІГ ГІГЄГ®Г¬: $c\n";
 
 $st = pow(2, 10);
 echo "$st\n";
@@ -118,7 +118,7 @@ for ($i = 0; $i < 10; $i++) {
 
 #7
 function printStringReturnNumber() {
-    echo "Ваше число:";
+    echo "Г‚Г ГёГҐ Г·ГЁГ±Г«Г®:";
     return 5;
 }
 $my_num = printStringReturnNumber();
@@ -161,7 +161,7 @@ function Sum($number) {
     return $sum;
 }
 $number = 1984;
-echo "Итоговая сумма: " . Sum($number)."\n";
+echo "Г€ГІГ®ГЈГ®ГўГ Гї Г±ГіГ¬Г¬Г : " . Sum($number)."\n";
 
 #9
 $array = [];
@@ -202,9 +202,9 @@ $result = ($array[0] * $array[1]) + ($array[2] * $array[3]);
 echo "$result\n";
 
 $user = [
-    'name' => 'Иван',
-    'surname' => 'Иванов',
-    'patronymic' => 'Иванович'
+    'name' => 'Г€ГўГ Г­',
+    'surname' => 'Г€ГўГ Г­Г®Гў',
+    'patronymic' => 'Г€ГўГ Г­Г®ГўГЁГ·'
 ];
 
 echo $user['surname'] . ' ' . $user['name'] . ' ' . $user['patronymic']."\n";
@@ -218,9 +218,9 @@ $date = [
 echo $date['year'] . '-' . $date['month'] . '-' . $date['day']."\n";
 
 $arr = ['a', 'b', 'c', 'd', 'e'];
-echo "Количество элементов в массиве: " . count($arr)."\n";
-echo "Последний элемент массива: " . end($arr)."\n";
-echo "Предпоследний элемент массива: " . $arr[count($arr) - 2]."\n";
+echo "ГЉГ®Г«ГЁГ·ГҐГ±ГІГўГ® ГЅГ«ГҐГ¬ГҐГ­ГІГ®Гў Гў Г¬Г Г±Г±ГЁГўГҐ: " . count($arr)."\n";
+echo "ГЏГ®Г±Г«ГҐГ¤Г­ГЁГ© ГЅГ«ГҐГ¬ГҐГ­ГІ Г¬Г Г±Г±ГЁГўГ : " . end($arr)."\n";
+echo "ГЏГ°ГҐГ¤ГЇГ®Г±Г«ГҐГ¤Г­ГЁГ© ГЅГ«ГҐГ¬ГҐГ­ГІ Г¬Г Г±Г±ГЁГўГ : " . $arr[count($arr) - 2]."\n";
 
 #10
 function isSumGreaterThanTen($a, $b) {
@@ -238,27 +238,27 @@ var_dump(areNumbersEqual(5, 5));
 var_dump(areNumbersEqual(4, 3)); 
 
 $test = 0;
-echo $test == 0 ? 'верно'."\n" : ''."\n";
+echo $test == 0 ? 'ГўГҐГ°Г­Г®'."\n" : ''."\n";
 
 $age = 50; 
 
 if ($age < 10 || $age > 99) {
-    echo "Число меньше 10 или больше 99.\n";
+    echo "Г—ГЁГ±Г«Г® Г¬ГҐГ­ГјГёГҐ 10 ГЁГ«ГЁ ГЎГ®Г«ГјГёГҐ 99.\n";
 } else {
     $sum = array_sum(str_split((string)$age));
     if ($sum <= 9) {
-        echo "Сумма цифр однозначна: $sum\n";
+        echo "Г‘ГіГ¬Г¬Г  Г¶ГЁГґГ° Г®Г¤Г­Г®Г§Г­Г Г·Г­Г : $sum\n";
     } else {
-        echo "Сумма цифр двузначна: $sum\n";
+        echo "Г‘ГіГ¬Г¬Г  Г¶ГЁГґГ° Г¤ГўГіГ§Г­Г Г·Г­Г : $sum\n";
     }
 }
 
 $arr = [1, 2, 3]; 
 
 if (count($arr) == 3) {
-    echo "Сумма элементов массива: " . array_sum($arr)."\n";
+    echo "Г‘ГіГ¬Г¬Г  ГЅГ«ГҐГ¬ГҐГ­ГІГ®Гў Г¬Г Г±Г±ГЁГўГ : " . array_sum($arr)."\n";
 } else {
-    echo "В массиве не 3 элемента.\n";
+    echo "Г‚ Г¬Г Г±Г±ГЁГўГҐ Г­ГҐ 3 ГЅГ«ГҐГ¬ГҐГ­ГІГ .\n";
 }
 
 #11
@@ -269,10 +269,10 @@ for ($i = 1; $i <= 20; $i++) {
 #12
 $array = [1, 2, 3, 4, 5];
 $average = array_sum($array) / count($array);
-echo "Среднее арифметическое: $average\n";
+echo "Г‘Г°ГҐГ¤Г­ГҐГҐ Г Г°ГЁГґГ¬ГҐГІГЁГ·ГҐГ±ГЄГ®ГҐ: $average\n";
 
 $sum = array_sum(range(1, 100));
-echo "Сумма чисел от 1 до 100: $sum\n";
+echo "Г‘ГіГ¬Г¬Г  Г·ГЁГ±ГҐГ« Г®ГІ 1 Г¤Г® 100: $sum\n";
 
 $array = [1, 4, 9, 16, 25];
 $sqrtArray = array_map('sqrt', $array);
@@ -286,10 +286,9 @@ print_r($alphabetArray);
 $str = '1234567890';
 $pairs = str_split($str, 2);
 $sum = array_sum($pairs);
-echo "Сумма пар чисел: $sum\n";
+echo "Г‘ГіГ¬Г¬Г  ГЇГ Г° Г·ГЁГ±ГҐГ«: $sum\n";
 
 
 
 // Don't change the line below
 echo "\nYour order is: $very_bad_unclear_name.";
-?>
