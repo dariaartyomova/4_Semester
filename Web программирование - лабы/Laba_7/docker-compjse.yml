@@ -1,0 +1,25 @@
+version: "3.8"
+services:
+  web:
+    image: nginx:latest
+    ports:
+      - "8080:80"
+    volumes:
+      - ./code:/code
+      - ./site.conf:/etc/nginx/conf.d/site.conf
+    links:
+      - php
+  php:
+    build: .
+    volumes:
+      - ./code:/code
+    depends_on:
+      - db
+    links:
+      - db
+  db:
+    image: mysql:8.0
+    ports:
+      - '6603:3306'
+    environment:
+      MYSQL_ROOT_PASSWORD: helloworld
