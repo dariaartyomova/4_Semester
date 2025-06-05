@@ -1,0 +1,18 @@
+[
+  {
+    "id": 0,
+    "login": "admin",
+    "password": "secret",
+    "name": "Administrator",
+    "email": "admin@stud.kantiana.com",
+    "address": false
+  },
+  {
+    "id": 1,
+    "login": "user1",
+    "password": "password",
+    "name": "Alexandra Volkova",
+    "email": "Alex@stud.kantiana.com",
+    "address": "dormitory_3"
+  }
+]
