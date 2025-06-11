@@ -1,4 +1,6 @@
 from v_keyboard import VirtualKeyboard
+from commands import PrintCharCommand
+
 
 if __name__ == "__main__":
     keyboard = VirtualKeyboard()
@@ -7,12 +9,11 @@ if __name__ == "__main__":
         print( "No saved state found, using defaults")
     else:
         print("Keyboard state loaded")
-        print(keyboard.output)
+        print(PrintCharCommand.text)
     
     with open("data/keyboard_log.txt", "w") as log_file:
         def print_and_log(message) -> None:
             print(message)
-            print(keyboard.output)
             log_file.write(message + "\n")
         
         print_and_log(keyboard.press_key("a"))
